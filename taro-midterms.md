@@ -51,6 +51,8 @@ Piecewise function in Truncated Power form: get each interval $[c_i,c_{i+1})$ an
 $1_{[c,\infty)}(t)=(x-c)^0_+;1_{(-\infty,c)}(t)=1-(x-c)^0_+;P(t)=\sum^n_{i=0}a_ix^i$
 $1_{[c_i,c_{i+1})}(t)=(t-c_i)^0_+-(t-c_{i+1})^0_+;f(t)=\sum^n_{i=0}1_{[c_i,c_{i+1})}(t)\cdot P_i(t)$
 $x^n=\sum^n_{j=0}\binom njc^{n-j}(x-c)^j;x^n(x-c)^k_+=\sum^n_{j=0}\binom njc^{n-j}(x-c)^{j+k}_+$
+<!--
 Correspondence between $P^k_d$ and ${P_d^k}_{[u_0,\dots,u_k]}$: map each member in $k$-tuple with an interval
 $[t_i,t_{i+1},\dots,t_{i+k}]_f=\sum_{r=i}^{i+k}([t_i,\dots,t_r]_g)([t_r,\dots,t_{i+k}]_h)$ for $f(t)=g(t)\cdot h(t)$
 If no solution (error, not enough degree), approx: $V\vec c\approx\vec y;V^TV\vec c=V^T\vec y$
+-->
