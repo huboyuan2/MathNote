@@ -16,6 +16,19 @@ Lagrange Poly: $P_n(t)=\sum^n_{k=0}l^n_k(t)\cdot f(t_k);l^n_k(t)=\prod^n_{i\ne k
 Newton Basis: $\{N_0(t),N_1(t),\dots,N_n(t)\};N_0(t)=1;N_i(t)=N_{i-1}(t)\cdot(t-t_{i-1})$
 Newton Form: $p(t)=\sum_{i=0}^d[t_0,\dots,t_i]_gN_i(t)$
 $[t_i]_g=g(t_i);[t_0,t_1,\dots,t_k]_g=\frac{[t_1,\dots,t_k]_g-[t_0,\dots,t_{k-1}]_g}{t_k-t_0}$
+
+$$
+\small
+\begin{array}{c|ccc}
+t & y\,(0\text{-order}) & 1\text{-order} & 2\text{-order} \\ \hline
+t_0 & y_0=[t_0]y & & \\
+& & [t_0,t_1]y = \frac{y_1-y_0}{t_1-t_0} & \\
+t_1 & y_1=[t_1]y & & [t_0,t_1,t_2]y = \frac{[t_1,t_2]y-[t_0,t_1]y}{t_2-t_0}\\
+& & [t_1,t_2]y = \frac{y_2-y_1}{t_2-t_1} & \\
+t_2 & y_2=[t_2]y & & 
+\end{array}
+$$
+
 $[t_i,t_{i+1},\dots,t_{i+k}]_g=\frac{[t_{i+1},\dots,t_{i+k}]_g-[t_{i},\dots,t_{i+k-1}]_g}{t_{i+k}-t_i}$
 $[t_i,t_{i+1},\dots,t_{i+k}]_g=g^{(k)}(t)$ (for repeated roots with multiplicity $\le k$)
 Ordered $k$-tuples ($P^k_d$): cartesian product of ${P_d \times P_d \times \dots \times P_d} \text{ k times}$
