@@ -12,7 +12,8 @@ Top-down Basis of 2: $
 \end{array}
 $, valid: $\{(t - 1)^2, (t - 1), (t - 3)^2\}$
 
-BB/CB-form: $\gamma(t)=\sum^d_{i=0}B^d_i(t)P_i=P_0+\sum^d_{i=1}(P_i-P_{i-1})C^d_i(t)$
+BB/CB-form: $\gamma(t)=\sum^d_{i=0}B^d_i(t)P_i=P_0+\sum^d_{i=1}C^d_i(t)(P_i-P_{i-1})=P_0+\sum^d_{i=1}C^d_i(t) \vec v_i$
+BB derivative: $\gamma'(t)=d\sum^{d-1}_{i=0}B^{d-1}_i(t)(P_{i+1}-P_i)=d\sum^{d-1}_{i=0}B^{d-1}_i(t) \vec v_{i+1}$
 NLI form: $\gamma_d(t)=(1-t)_{\gamma[P_0,P_1,\dots,P_{d-1}]}(t)+t_{\gamma[P_1,P_2,\dots,P_d]}(t)$
 Midpoint: get two edges of NLI triangle, recursively apply to them
 $C^d_0=\sum^d_{j=0}B^d_j(t)=1;B^d_i(t)=B^d_{d-i}(1-t);B^d_i(t)>0,\forall t\in(0,1)$
