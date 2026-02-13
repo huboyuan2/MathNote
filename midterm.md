@@ -20,12 +20,12 @@ $[t_i]_g=g(t_i);[t_0,t_1,\dots,t_k]_g=\frac{[t_1,\dots,t_k]_g-[t_0,\dots,t_{k-1}
 $$
 \small
 \begin{array}{c|ccc}
-t & y\,(0\text{-order}) & 1\text{-order} & 2\text{-order} \\ \hline
-t_0 & y_0=[t_0]y & & \\
-& & [t_0,t_1]y = \frac{y_1-y_0}{t_1-t_0} & \\
-t_1 & y_1=[t_1]y & & [t_0,t_1,t_2]y = \frac{[t_1,t_2]y-[t_0,t_1]y}{t_2-t_0}\\
-& & [t_1,t_2]y = \frac{y_2-y_1}{t_2-t_1} & \\
-t_2 & y_2=[t_2]y & & 
+t & g\,(0\text{-order}) & 1\text{-order} & 2\text{-order} \\ \hline
+t_0 & g(t_0)=[t_0]g & & \\
+& & [t_0,t_1]g = \frac{g(t_1)-g(t_0)}{t_1-t_0} & \\
+t_1 & g(t_1)=[t_1]g & & [t_0,t_1,t_2]g = \frac{[t_1,t_2]g-[t_0,t_1]g}{t_2-t_0}\\
+& & [t_1,t_2]g = \frac{g(t_2)-g(t_1)}{t_2-t_1} & \\
+t_2 & g(t_2)=[t_2]g & & 
 \end{array}
 $$
 
