@@ -45,13 +45,29 @@ $[t_i,t_{i+1},\dots,t_{i+k}]_g=g^{(k)}(t)$ (for repeated roots with multiplicity
 Ordered $k$-tuples ($P^k_d$): cartesian product of ${P_d \times P_d \times \dots \times P_d} \text{ k times}$
 $P_d^k$ standard basis: the union set of standard bases in each dimension
 Shifted and Truncated Power: $(x-c)^k;(x-c)^k_+=\begin{cases}(x-c)^k,&x>c\\0,&x\le c\end{cases}$
+Rules of Polar Form: 1) symmetry, 2) substitution, 3) affine ($ax+b$, no power above 1)
+Polar form in Bernstein:
+$$
+\small
+\begin{array}{ccc}
+d=2 & p(t) & F[u_1,u_2] \\ \hline
+B^2_0 & (1-t)^2 & (1-u_1)(1 - u_2) \\
+B^2_1 & 2(1-t)t & (1-u_1)u_2 + (1-u_2)u_1 \\
+B^2_2 & t^2 & u_iu_2 & 
+\end{array}
+\newline
+F[u_1,u_2] = C_0(1-u_1)(1-u_2) + C_1[(1-u_1)u_2 + (1 - u_2)u_1] + C_2u_1u_2
+\newline
+\therefore F[0,0] = C_0, F[0,1] = C_1, F[1,1] = C_2
+$$
+
+<!--
 ${P_{d,r}^k}_{[0,u_1,.,u_k]}=\{1,t,.,t^d,(t-u_1)^{r+1}_+,.,(t-u_1)^d_+,.,(t-u_{k-1})^{r+1}_+,.,(t-u_{k-1})^d_+\}$
 Order of Continuity $r$: $f(t)\in C^{r}[a,b]:f(t),f'(t),\dots,f^{(r)}(t)$ are all continuous in $[a,b]$
 Piecewise function in Truncated Power form: get each interval $[c_i,c_{i+1})$ and poly $P_i(t);$
 $1_{[c,\infty)}(t)=(x-c)^0_+;1_{(-\infty,c)}(t)=1-(x-c)^0_+;P(t)=\sum^n_{i=0}a_ix^i$
 $1_{[c_i,c_{i+1})}(t)=(t-c_i)^0_+-(t-c_{i+1})^0_+;f(t)=\sum^n_{i=0}1_{[c_i,c_{i+1})}(t)\cdot P_i(t)$
 $x^n=\sum^n_{j=0}\binom njc^{n-j}(x-c)^j;x^n(x-c)^k_+=\sum^n_{j=0}\binom njc^{n-j}(x-c)^{j+k}_+$
-<!--
 Correspondence between $P^k_d$ and ${P_d^k}_{[u_0,\dots,u_k]}$: map each member in $k$-tuple with an interval
 $[t_i,t_{i+1},\dots,t_{i+k}]_f=\sum_{r=i}^{i+k}([t_i,\dots,t_r]_g)([t_r,\dots,t_{i+k}]_h)$ for $f(t)=g(t)\cdot h(t)$
 If no solution (error, not enough degree), approx: $V\vec c\approx\vec y;V^TV\vec c=V^T\vec y$
