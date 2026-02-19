@@ -59,6 +59,34 @@ B^2_2 & t^2 & u_iu_2 &
 F[u_1,u_2] = C_0(1-u_1)(1-u_2) + C_1[(1-u_1)u_2 + (1 - u_2)u_1] + C_2u_1u_2
 \newline
 \therefore F[0,0] = C_0, F[0,1] = C_1, F[1,1] = C_2
+\newline
+\begin{array}{ccc}
+d=3 & p(t) & F[u_1,u_2,u_3] \\ \hline
+B^3_0 & (1-t)^3 & (1-u_1)(1-u_2)(1-u_3) \\
+B^3_1 & 3(1-t)t^2 & (1-u_1)(1-u_2)u_3 + (1-u_1)(1-u_3)u_2 + (1-u_2)(1-u_3)u_1 \\
+B^3_2 & 3(1-t)^2t & (1-u_1)u_2u_3 + (1-u_2)u_1u_3 + (1-u_3)u_1u_2 \\
+B^3_3 & t^3 & u_iu_2u_3 & 
+\end{array}
+\newline
+\therefore F[0,0,0] = C_0, F[0,0,1] = C_1, F[0,1,1] = C_2, F[1,1,1] = C_3
+$$
+Polar form in Standard:
+$$
+\small
+\begin{array}{ccc}
+d=2 & p(t) & F[u_1,u_2] \\ \hline
+ & 1 & 1 \\
+ & t & (u_1+u_2)\div2 \\
+ & t^2 & u_iu_2 & 
+\end{array}
+\begin{array}{ccc}
+d=3 & p(t) & F[u_1,u_2, u_3] \\ \hline
+ & 1 & 1 \\
+ & t & (u_1+u_2+u_3)\div3 \\
+ & t^2 & (u_1u_2+u_2u_3+u_1u_3)\div3 \\
+ & t^3 & u_iu_2u_3 & 
+\end{array}
+\newline
 $$
 
 <!--
