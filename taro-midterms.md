@@ -24,6 +24,7 @@ $D(abc)=\left|\begin{matrix}1&a&a^2\\1&b&b^2\\1&c&c^2\end{matrix}\right|=(b-a)(c
 In general: $D(a_1^{e_1}a_2^{e_2}\dots a_n^{e_n})=\prod_{1\le i\le j \le n}(a_i-a_j)^{e_i\cdot e_j}\cdot \prod^n_{k=1}(e_k-1)!!$
 and $k!!=\prod_{i=0}^k(i!);$ E.g., $2!!=2,3!!=2!\cdot3!=12,4!!=24\cdot12=288$
 Lagrange Poly: $P_n(t)=\sum^n_{k=0}l^n_k(t)\cdot f(t_k);l^n_k(t)=\prod^n_{i\ne k}\frac{t-t_i}{t_k-t_i}$
+$(x_0, y_0), (x_1,y_1), (x_2,y_2)\rightarrow y_0\frac{(x-x_1)(x-x_2)}{(x_0-x_1)(x_0-x_2)} + y_1\frac{(x-x_0)(x-x_2)}{(x_1-x_0)(x_1-x_2)} + y_2\frac{(x-x_0)(x-x_1)}{(x_2-x_0)(x_2-x_1)}$
 Newton Basis: $\{N_0(t),N_1(t),\dots,N_n(t)\};N_0(t)=1;N_i(t)=(t-t_{i-1})\cdot N_{i-1}(t)$
 Newton Form: $p(t)=\sum_{i=0}^d[t_0,\dots,t_i]_gN_i(t)$
 $[t_i]_g=g(t_i);[t_0,t_1,\dots,t_k]_g=\frac{[t_1,\dots,t_k]_g-[t_0,\dots,t_{k-1}]_g}{t_k-t_0}$
