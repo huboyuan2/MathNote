@@ -2,7 +2,7 @@ Standard basis: $\{1,t,t^2,\dots,t^d\};$ Shifted Basis: $S_c=\{1,t-c,(t-c)^2,\do
 Vandermonde Basis: $V(t_0,t_1,\dots,t_d)=\{(t-t_0)^d,(t-t_1)^d,(t-t_2)^d,\dots,(t-t_d)^d\}$
 Bernstein Basis: $\{B_0^d(t),B_1^d(t),\dots,B_d^d(t)\};B_i^d(t)=\binom di(1-t)^{d-i}\cdot t^i;\binom di=\frac{d!}{i!(d-i)!}$
 Cumulative Bernstein: $\{C_0^d(t),C_1^d(t),\dots,C_d^d(t)\};C_{i}^{d}(t)=\sum_{j=i}^{d}B_{j}^{d}(t)$
-
+Bernstein Derivative:$\frac{d}{dt}B_i^d(t) = d[B_{i-1}^{d-1}(t)-B_i^{d-1}(t)]$
 Top-down Basis of 2: $
 \small
 \begin{array}{cccc}
@@ -43,13 +43,14 @@ $$
 
 $[t_i,t_{i+1},\dots,t_{i+k}]_g=\frac{[t_{i+1},\dots,t_{i+k}]_g-[t_{i},\dots,t_{i+k-1}]_g}{t_{i+k}-t_i}$
 $[t_i,t_{i+1},\dots,t_{i+k}]_g=g^{(k)}(t)$ (for repeated roots with multiplicity $\le k$)
+<!--
 Ordered $k$-tuples ($P^k_d$): cartesian product of ${P_d \times P_d \times \dots \times P_d} \text{ k times}$
 $P_d^k$ standard basis: the union set of standard bases in each dimension
+-->
 Shifted and Truncated Power: $(x-c)^k;(x-c)^k_+=\begin{cases}(x-c)^k,&x>c\\0,&x\le c\end{cases}$
 Rules of Polar Form: 1) symmetry, 2) substitution, 3) affine ($ax+b$, no power above 1)
 Polar form in Bernstein:
-$$
-\small
+$$\small
 \begin{array}{ccc}
 d=2 & p(t) & F[u_1,u_2] \\ \hline
 B^2_0 & (1-t)^2 & (1-u_1)(1 - u_2) \\
@@ -60,7 +61,8 @@ B^2_2 & t^2 & u_iu_2 &
 F[u_1,u_2] = C_0(1-u_1)(1-u_2) + C_1[(1-u_1)u_2 + (1 - u_2)u_1] + C_2u_1u_2
 \newline
 \therefore F[0,0] = C_0, F[0,1] = C_1, F[1,1] = C_2
-\newline
+$$
+$$
 \begin{array}{ccc}
 d=3 & p(t) & F[u_1,u_2,u_3] \\ \hline
 B^3_0 & (1-t)^3 & (1-u_1)(1-u_2)(1-u_3) \\
@@ -89,6 +91,9 @@ d=3 & p(t) & F[u_1,u_2, u_3] \\ \hline
 \end{array}
 \newline
 $$
+To get control points from $(1,2) + (2,4)t + (3,6)t^2$, plug in 0's and 1's to $F[]$
+$$ F[0,1] = (1,2)\cdot 1 + (2,4)(u_1 + u_2) \div 2 + (3,6)u_1u_2 = (1,2) + (2,4)(0 + 1) \div 2 + (3,6)(0\cdot1) = (1,2)+(1,2)=(2,4)$$
+Trig Derivative:$\frac{d}{dt}(sin(t\pi)) = \pi cos(t\pi), \frac{d}{dt}(cos(t\pi)) = -\pi sin(t\pi), \frac{d}{dt}[f(t)g(t)] = f'(t)g(t)+f(t)g'(t)$
 
 <!--
 ${P_{d,r}^k}_{[0,u_1,.,u_k]}=\{1,t,.,t^d,(t-u_1)^{r+1}_+,.,(t-u_1)^d_+,.,(t-u_{k-1})^{r+1}_+,.,(t-u_{k-1})^d_+\}$
